@@ -1,0 +1,228 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(33, 33, 48);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    /* background-color: red; */
+    margin: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+h1{
+    color: white;
+    /* padding: 20px; */
+}
+
+.inputs {
+    /* width: 80%; */
+    /* margin: 10px auto; */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+.inputs .inputcell{
+    width: 40%;
+    display: block;
+    
+}
+.inputcell_button{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px; 
+}
+select{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 16px;
+    display: block;
+    margin: 10px 0px;
+    outline: 0;
+    
+}
+
+select:focus{
+    border: 1px solid blue;
+}
+label{
+    color: white;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 16px;
+}   
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 16px;
+    background-color: rgb(73, 151, 58);
+    color: white;
+    outline: 0;
+    border: 0;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    display: block;
+    cursor: pointer;
+}
+.inputcellt{
+    flex-basis: 100%;
+    align-self: center;
+    justify-self: center;
+    margin:auto;
+    
+}
+.inputcelltt{
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+    /* background-color: beige; */
+}
+.title{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.total{
+    font-size: 18px;
+    color: rgb(60, 60, 241);
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+h6{
+    width: 75%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+input:focus{
+    border: 2px solid rgb(60, 60, 241);
+    outline: 0;
+}
+
+hr{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+table{
+    margin: 10px;
+    text-align: center;
+    color: white;
+    display: block;
+    
+}
+table thead tr{
+    border: 1px solid white;
+}
+
+table thead tr th{
+    color: white;
+    padding: 10px;
+}
+.count1{
+    width: 60%;
+    margin: 10px;
+}
+
+tr td{
+    width: 10px;
+}
+tbody tr td{
+    color: rgb(231, 197, 176);
+}
+
+
+#clearAll{
+    background-color: rgb(250, 58, 58);
+    width: 50%;
+    
+}
+.none{
+    display: none;
+}
+.editt{
+    background-color: rgb(193, 193, 3);
+    
+}
+#del{
+    color: rgb(250, 58, 58);
+    padding: 10px;
+    cursor: pointer;
+}
+#edit{
+    color: rgb(73, 151, 58);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.validM{
+    color: red;
+    /* display: block; */
+    display: none;
+}
+/* media quires */
+
+@media (min-width:475px){
+    .container{
+        max-width: 475px;
+        
+    }
+    
+}
+
+@media (min-width:640px){
+    .container{
+        max-width: 640px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width:1024px){
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width:1280px){
+    .container{
+        max-width: 1280px;
+    }
+}
+
+@media (min-width:1536px){
+    .container{
+        max-width: 1536px;
+    }
+}
+
+

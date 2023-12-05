@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Products</h1>
+        <div class="inputcellt">
+            <input class="title" id="title" type="text" placeholder="Title" >
+            <span id="validationMessage" class="validM">You must enter data</span>
+        </div>
+        <div class="inputs" id="costInputs">
+            <h6>Calculate Price</h6>
+            <div class="inputcell">
+                <input  type="text" placeholder="Price">
+                <span id="validationMessage" class="validM">You must enter data</span>
+            </div>
+            <div class="inputcell">
+                <input  type="text" placeholder="Tax%">
+                <span id="validationMessage" class="validM">You must enter data</span>
+            </div>
+            <div class="inputcell">
+                <input  type="text" placeholder="Deliveary" >
+                <span id="validationMessage" class="validM">You must enter data</span>
+            </div>
+            <div class="inputcell">
+                <input  type="text" placeholder="Discount">
+                <span id="validationMessage" class="validM">You must enter data</span>
+            </div>
+            <div class="inputcelltt">
+                <input  type="text" class="total" placeholder="Total" readonly>
+                <span id="validationMessage" class="validM">You must enter data</span>
+            </div>
+        </div>
+        <div class="count1" >
+            <input  type="text" id="count" placeholder="Count">
+            <span id="validationMessage" class="validM">You must enter data</span>
+        </div>
+        <div class="count1">
+            <label for="Department">Department</label>
+            <select name="Department" id="Department">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="kids">kids</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <div class="inputcell_button">
+            <button id="createbtn" type="submit">Create New Product</button>
+        </div>
+        <hr>
+        <h1>List of products</h1>
+        <button type="submit" class="none" id="clearAll">
+            Clear All 
+            <span id="countElment"></span>
+        </button> 
+        <div class="table" >
+            <table >
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Tax</th>
+                        <th>Delivray</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Department</th>
+                        <th>last updated</th>   
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
